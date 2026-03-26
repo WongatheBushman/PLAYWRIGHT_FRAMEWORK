@@ -1,0 +1,951 @@
+{
+  "config": {
+    "configFile": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\playwright.config.ts",
+    "rootDir": "D:/THESIS/PLAYWRIGHT_FRAMEWORK/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/THESIS/PLAYWRIGHT_FRAMEWORK/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/THESIS/PLAYWRIGHT_FRAMEWORK/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/JSON-Report/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 3,
+    "webServer": {
+      "command": "npx serve D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\setup -l 3000",
+      "timeout": 6000,
+      "reuseExistingServer": true,
+      "stdout": "ignore",
+      "stderr": "pipe"
+    }
+  },
+  "suites": [
+    {
+      "title": "e2e\\render_objects_top.spec.ts",
+      "file": "e2e/render_objects_top.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Mesh Rendering E2E",
+          "file": "e2e/render_objects_top.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "renders all core meshes with ShaderLitTextured",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1666,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  475869 pixels (ratio 1.00 of all image pixels) are different.\n\n  Snapshot: mesh-e2e.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(mesh-e2e.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 475869 pixels (ratio 1.00 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 475869 pixels (ratio 1.00 of all image pixels) are different.\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  475869 pixels (ratio 1.00 of all image pixels) are different.\n\n  Snapshot: mesh-e2e.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(mesh-e2e.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 475869 pixels (ratio 1.00 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 475869 pixels (ratio 1.00 of all image pixels) are different.\u001b[22m\n\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts:84:26",
+                        "location": {
+                          "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts",
+                          "column": 26,
+                          "line": 84
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 82 |\u001b[39m     \u001b[90m//check rendered canvas against reference-screenshot with an allowed\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[90m//Pixel-difference of 0.01 (1%)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 84 |\u001b[39m     \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"mesh-e2e.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 85 |\u001b[39m       maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 86 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 87 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts",
+                            "column": 26,
+                            "line": 84
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  475869 pixels (ratio 1.00 of all image pixels) are different.\n\n  Snapshot: mesh-e2e.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(mesh-e2e.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 475869 pixels (ratio 1.00 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 475869 pixels (ratio 1.00 of all image pixels) are different.\u001b[22m\n\n\n\u001b[0m \u001b[90m 82 |\u001b[39m     \u001b[90m//check rendered canvas against reference-screenshot with an allowed\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[90m//Pixel-difference of 0.01 (1%)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 84 |\u001b[39m     \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"mesh-e2e.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 85 |\u001b[39m       maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 86 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 87 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts:84:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:09.108Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "mesh-e2e-expected.png",
+                          "contentType": "image/png",
+                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts-snapshots\\mesh-e2e-win32.png"
+                        },
+                        {
+                          "name": "mesh-e2e-actual.png",
+                          "contentType": "image/png",
+                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\test-results\\e2e-render_objects_top-FUD-105ec-shes-with-ShaderLitTextured\\mesh-e2e-actual.png"
+                        },
+                        {
+                          "name": "mesh-e2e-diff.png",
+                          "contentType": "image/png",
+                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\test-results\\e2e-render_objects_top-FUD-105ec-shes-with-ShaderLitTextured\\mesh-e2e-diff.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts",
+                        "column": 26,
+                        "line": 84
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c802bc7e1b57f4e8c90b-aa7bf885ac5d399a8fff",
+              "file": "e2e/render_objects_top.spec.ts",
+              "line": 16,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "integration\\Parent_Child_Transforms.spec.ts",
+      "file": "integration/Parent_Child_Transforms.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Integration Test – Parent-Child Transform Propagation",
+          "file": "integration/Parent_Child_Transforms.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "single parent translation propagates to child",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 924,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:09.092Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e790f6e636830fbddf90-1e57978590e349417ef6",
+              "file": "integration/Parent_Child_Transforms.spec.ts",
+              "line": 43,
+              "column": 9
+            },
+            {
+              "title": "multi-level hierarchy propagates transformations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 473,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:10.658Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e790f6e636830fbddf90-c78c54a4564f47aaf883",
+              "file": "integration/Parent_Child_Transforms.spec.ts",
+              "line": 66,
+              "column": 9
+            },
+            {
+              "title": "sibling nodes inherit only from common parent",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 353,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:11.151Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e790f6e636830fbddf90-61615e56fc9dffc989a3",
+              "file": "integration/Parent_Child_Transforms.spec.ts",
+              "line": 89,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\hierarchy\\AddChild.spec.ts",
+      "file": "unit/hierarchy/AddChild.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Node Hierarchy Test AddChild",
+          "file": "unit/hierarchy/AddChild.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "AddChild",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 936,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:09.152Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "48a033fa9c14a549cc33-4d5967e49a37601414cc",
+              "file": "unit/hierarchy/AddChild.spec.ts",
+              "line": 9,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\hierarchy\\ParentChildLink.spec.ts",
+      "file": "unit/hierarchy/ParentChildLink.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Node Hierarchy Test Parent Child Link",
+          "file": "unit/hierarchy/ParentChildLink.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Parent Child Link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 362,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:10.728Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "168840e90cb5ad48b1c8-98cf55ec76ac1155896f",
+              "file": "unit/hierarchy/ParentChildLink.spec.ts",
+              "line": 11,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\hierarchy\\RemoveChild.spec.ts",
+      "file": "unit/hierarchy/RemoveChild.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Node Hierarchy Tests, Remove Child",
+          "file": "unit/hierarchy/RemoveChild.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Remove Child",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 324,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:11.108Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "389efff68d734dac6e89-6c6d83aa66e7f1072fc7",
+              "file": "unit/hierarchy/RemoveChild.spec.ts",
+              "line": 10,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\math\\Matrix4x4\\Rotation.spec.ts",
+      "file": "unit/math/Matrix4x4/Rotation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Matrix4X4 Rotation Test",
+          "file": "unit/math/Matrix4x4/Rotation.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Matrix4x4 Rotation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 325,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:11.452Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a46eab9176b6ba4f868f-0158970ba2e54f6f21b4",
+              "file": "unit/math/Matrix4x4/Rotation.spec.ts",
+              "line": 9,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\math\\Matrix4x4\\Scaling.spec.ts",
+      "file": "unit/math/Matrix4x4/Scaling.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Matrix4X4 Scaling Test",
+          "file": "unit/math/Matrix4x4/Scaling.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Matrix4x4 Scaling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 325,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:11.526Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5f9341ed61b407a1c64c-310d554fa0bd33eceb49",
+              "file": "unit/math/Matrix4x4/Scaling.spec.ts",
+              "line": 9,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\math\\Matrix4x4\\Translation.spec.ts",
+      "file": "unit/math/Matrix4x4/Translation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Matrix4X4 Translation Test",
+          "file": "unit/math/Matrix4x4/Translation.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Matrix4x4 Translation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 327,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:13.159Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3dd2dfb5204185ed0f61-917289949b00c798bf71",
+              "file": "unit/math/Matrix4x4/Translation.spec.ts",
+              "line": 9,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\math\\Vector3\\Addition.spec.ts",
+      "file": "unit/math/Vector3/Addition.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Vector3 Addition Test",
+          "file": "unit/math/Vector3/Addition.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Vector3 Addition using numeric comparison",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 306,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:11.795Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a35f76eab5bd8fd4c5-371ed4b07a7321f57a4c",
+              "file": "unit/math/Vector3/Addition.spec.ts",
+              "line": 10,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\math\\Vector3\\Difference.spec.ts",
+      "file": "unit/math/Vector3/Difference.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Vector3 Difference Test",
+          "file": "unit/math/Vector3/Difference.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Vector3 Difference using numeric comparison",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 329,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:11.871Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "50639c62e46db3c5388a-c2e489d55650cc24a93d",
+              "file": "unit/math/Vector3/Difference.spec.ts",
+              "line": 9,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\math\\Vector3\\Magnitude.spec.ts",
+      "file": "unit/math/Vector3/Magnitude.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Vector3 Magnitude Test",
+          "file": "unit/math/Vector3/Magnitude.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Vector3 Magnitude",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 312,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:12.117Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b28192f5d90482bf5519-c525dcdbc7ebe863d00e",
+              "file": "unit/math/Vector3/Magnitude.spec.ts",
+              "line": 9,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\math\\Vector3\\Subtraction.spec.ts",
+      "file": "unit/math/Vector3/Subtraction.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Vector3 Subtraction Test",
+          "file": "unit/math/Vector3/Subtraction.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Vector3 Subtraction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 296,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:12.219Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "830e75fbfdec4a44ba0e-94f020f3253100a1f758",
+              "file": "unit/math/Vector3/Subtraction.spec.ts",
+              "line": 10,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\math\\Vector3\\Summation.spec.ts",
+      "file": "unit/math/Vector3/Summation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Vector3 Summation Test",
+          "file": "unit/math/Vector3/Summation.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Vector3 Summation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 287,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:12.445Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2992cb34deccc0675cd4-8b781409a270e6af6030",
+              "file": "unit/math/Vector3/Summation.spec.ts",
+              "line": 10,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\node\\AddComponent.spec.ts",
+      "file": "unit/node/AddComponent.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Node Test - Add Component",
+          "file": "unit/node/AddComponent.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Add Component",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 310,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:12.533Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d28fa93594a3e01221f8-dc9435fab1a1e238f845",
+              "file": "unit/node/AddComponent.spec.ts",
+              "line": 10,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\node\\CreateNode.spec.ts",
+      "file": "unit/node/CreateNode.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE Node Test - Create Node",
+          "file": "unit/node/CreateNode.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Create Node",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 282,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-24T12:05:12.762Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c8666e266b779dc2bf78-3cd109f3d91db95bd91f",
+              "file": "unit/node/CreateNode.spec.ts",
+              "line": 9,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-24T12:05:07.752Z",
+    "duration": 6021.846,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

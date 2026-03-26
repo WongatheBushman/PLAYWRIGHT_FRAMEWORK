@@ -1,0 +1,32 @@
+{
+  "name": "playwright_framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:unit": "npx playwright test tests/unit",
+    "test:unit:math": "npx playwright test tests/unit/math",
+    "test:unit:node": "npx playwright test tests/unit/node",
+    "test:unit:hierarchy": "npx playwright test tests/unit/hierarchy",
+    "test:unit:serialization": "npx playwright test tests/unit/serialization",
+    "test:unit:transform": "npx playwright test tests/unit/transform",
+    "test:integration": "npx playwright test tests/integration",
+    "test:e2e": "npx playwright test tests/e2e"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.0.2",
+    "playwright": "^1.57.0",
+    "serve": "^14.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
