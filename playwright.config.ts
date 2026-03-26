@@ -1,4 +1,4 @@
-//IMports
+//Imports
 import { defineConfig } from '@playwright/test';
 import path from 'path';
 
@@ -13,7 +13,7 @@ export default defineConfig({
   ],
   //setup of the automated server for testrunning
   webServer: {
-    //command to stat the autoamted server when tests start, 
+    //command to start the automated server when tests start, 
     command: `npx serve ${path.resolve(__dirname, 'setup')} -l 3000`,
     timeout: 6000,
     reuseExistingServer: !process.env.CI,
