@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\playwright.config.ts",
-    "rootDir": "D:/THESIS/PLAYWRIGHT_FRAMEWORK/tests",
+    "configFile": "/app/playwright.config.ts",
+    "rootDir": "/app/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -16,7 +16,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "D:/THESIS/PLAYWRIGHT_FRAMEWORK/test-results",
+        "outputDir": "/app/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -24,7 +24,7 @@
         },
         "id": "",
         "name": "",
-        "testDir": "D:/THESIS/PLAYWRIGHT_FRAMEWORK/tests",
+        "testDir": "/app/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -57,7 +57,7 @@
     "version": "1.58.2",
     "workers": 3,
     "webServer": {
-      "command": "npx serve D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\setup -l 3000",
+      "command": "npx serve /app/setup -l 3000",
       "timeout": 6000,
       "reuseExistingServer": true,
       "stdout": "ignore",
@@ -66,7 +66,7 @@
   },
   "suites": [
     {
-      "title": "e2e\\render_objects_top.spec.ts",
+      "title": "e2e/render_objects_top.spec.ts",
       "file": "e2e/render_objects_top.spec.ts",
       "column": 0,
       "line": 0,
@@ -80,7 +80,7 @@
           "specs": [
             {
               "title": "renders all core meshes with ShaderLitTextured",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -93,58 +93,18 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 1666,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  475869 pixels (ratio 1.00 of all image pixels) are different.\n\n  Snapshot: mesh-e2e.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(mesh-e2e.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 475869 pixels (ratio 1.00 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 475869 pixels (ratio 1.00 of all image pixels) are different.\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  475869 pixels (ratio 1.00 of all image pixels) are different.\n\n  Snapshot: mesh-e2e.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(mesh-e2e.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 475869 pixels (ratio 1.00 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 475869 pixels (ratio 1.00 of all image pixels) are different.\u001b[22m\n\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts:84:26",
-                        "location": {
-                          "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts",
-                          "column": 26,
-                          "line": 84
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 82 |\u001b[39m     \u001b[90m//check rendered canvas against reference-screenshot with an allowed\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[90m//Pixel-difference of 0.01 (1%)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 84 |\u001b[39m     \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"mesh-e2e.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 85 |\u001b[39m       maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 86 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 87 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts",
-                            "column": 26,
-                            "line": 84
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  475869 pixels (ratio 1.00 of all image pixels) are different.\n\n  Snapshot: mesh-e2e.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(mesh-e2e.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 475869 pixels (ratio 1.00 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 475869 pixels (ratio 1.00 of all image pixels) are different.\u001b[22m\n\n\n\u001b[0m \u001b[90m 82 |\u001b[39m     \u001b[90m//check rendered canvas against reference-screenshot with an allowed\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[90m//Pixel-difference of 0.01 (1%)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 84 |\u001b[39m     \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"mesh-e2e.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 85 |\u001b[39m       maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 86 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 87 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts:84:26\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 1564,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:09.108Z",
+                      "startTime": "2026-03-30T12:09:29.418Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "mesh-e2e-expected.png",
-                          "contentType": "image/png",
-                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts-snapshots\\mesh-e2e-win32.png"
-                        },
-                        {
-                          "name": "mesh-e2e-actual.png",
-                          "contentType": "image/png",
-                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\test-results\\e2e-render_objects_top-FUD-105ec-shes-with-ShaderLitTextured\\mesh-e2e-actual.png"
-                        },
-                        {
-                          "name": "mesh-e2e-diff.png",
-                          "contentType": "image/png",
-                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\test-results\\e2e-render_objects_top-FUD-105ec-shes-with-ShaderLitTextured\\mesh-e2e-diff.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts",
-                        "column": 26,
-                        "line": 84
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "c802bc7e1b57f4e8c90b-aa7bf885ac5d399a8fff",
@@ -157,7 +117,7 @@
       ]
     },
     {
-      "title": "integration\\Parent_Child_Transforms.spec.ts",
+      "title": "integration/Parent_Child_Transforms.spec.ts",
       "file": "integration/Parent_Child_Transforms.spec.ts",
       "column": 0,
       "line": 0,
@@ -185,12 +145,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 924,
+                      "duration": 653,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:09.092Z",
+                      "startTime": "2026-03-30T12:09:32.318Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -219,12 +179,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 473,
+                      "duration": 458,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:10.658Z",
+                      "startTime": "2026-03-30T12:09:33.147Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -253,12 +213,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 353,
+                      "duration": 476,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:11.151Z",
+                      "startTime": "2026-03-30T12:09:33.621Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -276,7 +236,7 @@
       ]
     },
     {
-      "title": "unit\\hierarchy\\AddChild.spec.ts",
+      "title": "unit/hierarchy/AddChild.spec.ts",
       "file": "unit/hierarchy/AddChild.spec.ts",
       "column": 0,
       "line": 0,
@@ -304,12 +264,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 936,
+                      "duration": 1113,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:09.152Z",
+                      "startTime": "2026-03-30T12:09:29.429Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -327,7 +287,7 @@
       ]
     },
     {
-      "title": "unit\\hierarchy\\ParentChildLink.spec.ts",
+      "title": "unit/hierarchy/ParentChildLink.spec.ts",
       "file": "unit/hierarchy/ParentChildLink.spec.ts",
       "column": 0,
       "line": 0,
@@ -355,12 +315,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 362,
+                      "duration": 336,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:10.728Z",
+                      "startTime": "2026-03-30T12:09:32.084Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -378,7 +338,7 @@
       ]
     },
     {
-      "title": "unit\\hierarchy\\RemoveChild.spec.ts",
+      "title": "unit/hierarchy/RemoveChild.spec.ts",
       "file": "unit/hierarchy/RemoveChild.spec.ts",
       "column": 0,
       "line": 0,
@@ -406,12 +366,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 324,
+                      "duration": 386,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:11.108Z",
+                      "startTime": "2026-03-30T12:09:32.454Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -429,7 +389,7 @@
       ]
     },
     {
-      "title": "unit\\math\\Matrix4x4\\Rotation.spec.ts",
+      "title": "unit/math/Matrix4x4/Rotation.spec.ts",
       "file": "unit/math/Matrix4x4/Rotation.spec.ts",
       "column": 0,
       "line": 0,
@@ -454,15 +414,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 325,
+                      "duration": 368,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:11.452Z",
+                      "startTime": "2026-03-30T12:09:32.579Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -480,7 +440,7 @@
       ]
     },
     {
-      "title": "unit\\math\\Matrix4x4\\Scaling.spec.ts",
+      "title": "unit/math/Matrix4x4/Scaling.spec.ts",
       "file": "unit/math/Matrix4x4/Scaling.spec.ts",
       "column": 0,
       "line": 0,
@@ -505,15 +465,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 325,
+                      "duration": 352,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:11.526Z",
+                      "startTime": "2026-03-30T12:09:32.914Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -531,7 +491,7 @@
       ]
     },
     {
-      "title": "unit\\math\\Matrix4x4\\Translation.spec.ts",
+      "title": "unit/math/Matrix4x4/Translation.spec.ts",
       "file": "unit/math/Matrix4x4/Translation.spec.ts",
       "column": 0,
       "line": 0,
@@ -556,15 +516,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 327,
+                      "duration": 364,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:13.159Z",
+                      "startTime": "2026-03-30T12:09:32.994Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -582,7 +542,7 @@
       ]
     },
     {
-      "title": "unit\\math\\Vector3\\Addition.spec.ts",
+      "title": "unit/math/Vector3/Addition.spec.ts",
       "file": "unit/math/Vector3/Addition.spec.ts",
       "column": 0,
       "line": 0,
@@ -610,12 +570,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 306,
+                      "duration": 377,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:11.795Z",
+                      "startTime": "2026-03-30T12:09:33.312Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -633,7 +593,7 @@
       ]
     },
     {
-      "title": "unit\\math\\Vector3\\Difference.spec.ts",
+      "title": "unit/math/Vector3/Difference.spec.ts",
       "file": "unit/math/Vector3/Difference.spec.ts",
       "column": 0,
       "line": 0,
@@ -658,15 +618,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 329,
+                      "duration": 372,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:11.871Z",
+                      "startTime": "2026-03-30T12:09:33.411Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -684,7 +644,7 @@
       ]
     },
     {
-      "title": "unit\\math\\Vector3\\Magnitude.spec.ts",
+      "title": "unit/math/Vector3/Magnitude.spec.ts",
       "file": "unit/math/Vector3/Magnitude.spec.ts",
       "column": 0,
       "line": 0,
@@ -712,12 +672,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 312,
+                      "duration": 344,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:12.117Z",
+                      "startTime": "2026-03-30T12:09:33.732Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -735,7 +695,7 @@
       ]
     },
     {
-      "title": "unit\\math\\Vector3\\Subtraction.spec.ts",
+      "title": "unit/math/Vector3/Subtraction.spec.ts",
       "file": "unit/math/Vector3/Subtraction.spec.ts",
       "column": 0,
       "line": 0,
@@ -760,15 +720,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 296,
+                      "duration": 359,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:12.219Z",
+                      "startTime": "2026-03-30T12:09:33.834Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -786,7 +746,7 @@
       ]
     },
     {
-      "title": "unit\\math\\Vector3\\Summation.spec.ts",
+      "title": "unit/math/Vector3/Summation.spec.ts",
       "file": "unit/math/Vector3/Summation.spec.ts",
       "column": 0,
       "line": 0,
@@ -814,12 +774,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 287,
+                      "duration": 385,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:12.445Z",
+                      "startTime": "2026-03-30T12:09:34.119Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -837,7 +797,7 @@
       ]
     },
     {
-      "title": "unit\\node\\AddComponent.spec.ts",
+      "title": "unit/node/AddComponent.spec.ts",
       "file": "unit/node/AddComponent.spec.ts",
       "column": 0,
       "line": 0,
@@ -865,12 +825,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 310,
+                      "duration": 362,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:12.533Z",
+                      "startTime": "2026-03-30T12:09:34.157Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -888,7 +848,7 @@
       ]
     },
     {
-      "title": "unit\\node\\CreateNode.spec.ts",
+      "title": "unit/node/CreateNode.spec.ts",
       "file": "unit/node/CreateNode.spec.ts",
       "column": 0,
       "line": 0,
@@ -913,15 +873,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 282,
+                      "duration": 335,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-24T12:05:12.762Z",
+                      "startTime": "2026-03-30T12:09:34.236Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -941,11 +901,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-24T12:05:07.752Z",
-    "duration": 6021.846,
-    "expected": 16,
+    "startTime": "2026-03-30T12:09:25.035Z",
+    "duration": 9641.662999999999,
+    "expected": 17,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
