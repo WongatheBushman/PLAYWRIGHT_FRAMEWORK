@@ -7,18 +7,22 @@ on:
   pull_request:
     paths:
       - 'setup/source/FudgeCore.js'
+  workflow_dispatch: # optional: manuell starten
 
 jobs:
   test:
-    name: Run Playwright Tests
     runs-on: ubuntu-latest
 
+    # 🐳 Playwright Container nutzen
+    container:
+      image: mcr.microsoft.com/playwright:v1.42.1-jammy
+
     steps:
-      # Repo auschecken
+      # Code holen (inkl. deiner Tests!)
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Node.js einrichten
+      # Node + Cache
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -29,15 +33,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Playwright + Browser installieren
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
-
       # Tests ausführen
       - name: Run Playwright tests
         run: npx playwright test
 
-      # Report immer hochladen
+      # Report speichern
       - name: Upload Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
@@ -46,7 +46,7 @@ jobs:
           path: playwright-report/
           retention-days: 7
 
-      # Screenshots/Videos bei Fehlern sichern
+      # Screenshots/Videos bei Fehlern
       - name: Upload Test Results
         if: failure()
         uses: actions/upload-artifact@v4
