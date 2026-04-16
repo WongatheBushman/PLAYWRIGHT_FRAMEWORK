@@ -13,46 +13,25 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    # 🐳 Playwright Container
     container:
       image: mcr.microsoft.com/playwright:v1.42.1-jammy
 
-    # 🔥 WICHTIG: korrekter Browser-Pfad
-    env:
-      PLAYWRIGHT_BROWSERS_PATH: /ms-playwright
-
     steps:
-      # Repo laden
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Node + npm Cache
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'npm'
 
-      # 🔥 Playwright Browser Cache (FIXED)
-      - name: Cache Playwright browsers
-        uses: actions/cache@v4
-        with:
-          path: /ms-playwright
-          key: playwright-${{ runner.os }}
-
-      # Dependencies installieren
       - name: Install dependencies
         run: npm ci
 
-      # Browser installieren (nutzt Cache wenn vorhanden)
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
-
-      # Tests ausführen
       - name: Run Playwright tests
         run: npx playwright test
 
-      # Report speichern
       - name: Upload Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
@@ -61,7 +40,6 @@ jobs:
           path: playwright-report/
           retention-days: 7
 
-      # Screenshots/Videos bei Fehlern
       - name: Upload Test Results
         if: failure()
         uses: actions/upload-artifact@v4
