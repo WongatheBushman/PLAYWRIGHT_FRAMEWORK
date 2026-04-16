@@ -7,40 +7,44 @@ on:
   pull_request:
     paths:
       - 'setup/source/FudgeCore.js'
-  workflow_dispatch: # optional: manuell starten
+  workflow_dispatch:
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
-    # 🐳 Playwright Container nutzen
+    # 🐳 Playwright Container
     container:
       image: mcr.microsoft.com/playwright:v1.42.1-jammy
 
+    # 🔥 WICHTIG: korrekter Browser-Pfad
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: /ms-playwright
+
     steps:
-      # Code holen (inkl. deiner Tests!)
+      # Repo laden
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Node + Cache
+      # Node + npm Cache
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'npm'
 
+      # 🔥 Playwright Browser Cache (FIXED)
       - name: Cache Playwright browsers
         uses: actions/cache@v4
         with:
-          path: ~/.cache/ms-playwright
-          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            playwright-${{ runner.os }}-
+          path: /ms-playwright
+          key: playwright-${{ runner.os }}
 
       # Dependencies installieren
       - name: Install dependencies
         run: npm ci
 
+      # Browser installieren (nutzt Cache wenn vorhanden)
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
