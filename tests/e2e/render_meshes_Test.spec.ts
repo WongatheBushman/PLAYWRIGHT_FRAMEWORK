@@ -1,8 +1,9 @@
 
 import { test, expect } from "@playwright/test";
-let page: Page;
+//let page: Page;
 
-test.describe("FUDGE Integration Test – Parent-Child Transform Propagation", () => {
+test.describe("FUDGE e2e Test - Render all Meshes", () => {
+    let page: Page;
     test.beforeAll(async ({ browser}) => {
         page = await browser.newPage();
         await page.goto("/"); 
@@ -14,12 +15,11 @@ test.describe("FUDGE Integration Test – Parent-Child Transform Propagation", (
                 "ShaderLitTest",
                 F.ShaderLitTextured,
                 new F.CoatTextured()
-                );
-
+            );
             let subclass: typeof F.Mesh[] = F.Mesh.subclasses;
-
             for (let i: number = 0; i < subclass.length; i++) {
-                let mesh: F.Mesh;
+                let node = window.testUtils.createNode(subclass[i].name.replace("Mesh", ""));
+                let mesh;
                 switch (subclass[i].name) {
                     case F.MeshOBJ.name:
                         mesh = await new F.MeshOBJ("Icosphere").load("../dependencies/objects/Icosphere.obj");
@@ -29,9 +29,9 @@ test.describe("FUDGE Integration Test – Parent-Child Transform Propagation", (
                     break;
                     };
 
-                const node = window.testUtils.createNode(subclass[i].name.replace("Mesh", ""));
+                
 
-                const cmpMesh = new F.ComponentMesh(new MeshClass());
+                const cmpMesh = new F.ComponentMesh(mesh);
                 const cmpMaterial = new F.ComponentMaterial(material);
                 cmpMaterial.sortForAlpha = true;
                 node.addComponent(cmpMesh);
@@ -64,41 +64,54 @@ test.describe("FUDGE Integration Test – Parent-Child Transform Propagation", (
             viewport.backgroundColor = F.Color.CSS("gray");
             //update viewport
             viewport.draw();
-            window.TestData = {cmpCamTrans, F};
+            window.TestData = {cmpCamTrans, viewport, F};
         });    
     });
 
+    test.afterAll(async () => {
+        await page.close();
+    });
+
     test("Front View", async () => {
-        const result = await page.evaluate(() => {
-            const {cmpCamTrans, F} = window.TestData;
-            cmpCamTrans.mtxLocal.translation = new F.Vector3(0, 0, 15);
-            const canvas = page.locator("#renderCanvas");
-            await expect(canvas).toHaveScreenshot("meshes-test-e2e-1.png", {
-                maxDiffPixelRatio: 0.01
-            });
-        });    
-            
+        //await page.goto("/"); 
+        //await page.waitForFunction(() => window.testUtils);
+        await page.evaluate(() => {
+            const {cmpCamTrans, viewport, F} = window.TestData;
+            cmpCamTrans.mtxLocal.translation = new F.Vector3(0, 0, 40);
+            cmpCamTrans.mtxLocal.lookAt(F.Vector3.ZERO());
+            viewport.draw();      
+        });
+        const canvas = page.locator("#renderCanvas");
+        await expect(canvas).toHaveScreenshot("meshes-test-e2e-1.png", {
+            maxDiffPixelRatio: 0.01
+        });          
     });
     test("Isometric Top Front", async () => {
-        const result = await page.evaluate(() => {
-            const {cmpCamTrans, F} = window.TestData;
-            cmpCamTrans.mtxLocal.translation = new F.Vector3(15, 15, 15);
-            const canvas = page.locator("#renderCanvas");
-            await expect(canvas).toHaveScreenshot("meshes-test-e2e-2.png", {
-                maxDiffPixelRatio: 0.01
-            });
-        });    
-            
+        //await page.goto("/"); 
+        //await page.waitForFunction(() => window.testUtils);
+        await page.evaluate(() => {
+            const {cmpCamTrans, viewport, F} = window.TestData;
+            cmpCamTrans.mtxLocal.translation = new F.Vector3(20, 20, 20);
+            cmpCamTrans.mtxLocal.lookAt(F.Vector3.ZERO());   
+            viewport.draw();        
+        });  
+        const canvas = page.locator("#renderCanvas");   
+        await expect(canvas).toHaveScreenshot("meshes-test-e2e-2.png", {
+            maxDiffPixelRatio: 0.01
+        });  
     });
     test("Isometric Back Below", async () => {
-        const result = await page.evaluate(() => {
-            const {cmpCamTrans, F} = window.TestData;
-            cmpCamTrans.mtxLocal.translation = new F.Vector3(-15, 15, -15);
-            const canvas = page.locator("#renderCanvas");
-            await expect(canvas).toHaveScreenshot("meshes-test-e2e-3.png", {
-                maxDiffPixelRatio: 0.01
-            });
+        //await page.goto("/"); 
+        //await page.waitForFunction(() => window.testUtils);
+        await page.evaluate(() => {
+            const {cmpCamTrans, viewport, F} = window.TestData;
+            cmpCamTrans.mtxLocal.translation = new F.Vector3(20, -20, -20); 
+            cmpCamTrans.mtxLocal.lookAt(F.Vector3.ZERO());
+            viewport.draw();
         });    
-            
+        const canvas = page.locator("#renderCanvas");
+        await expect(canvas).toHaveScreenshot("meshes-test-e2e-3.png", {
+            maxDiffPixelRatio: 0.01
+        });    
     });
 });
