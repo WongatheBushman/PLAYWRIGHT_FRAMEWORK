@@ -99,7 +99,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:25.828Z",
+                      "startTime": "2026-05-11T08:48:17.178Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -128,12 +128,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 152,
+                      "duration": 172,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:28.683Z",
+                      "startTime": "2026-05-11T08:48:20.690Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -162,7 +162,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 534,
+                      "duration": 545,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  5074 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: meshes-test-e2e-3.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(meshes-test-e2e-3.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  5074 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: meshes-test-e2e-3.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(meshes-test-e2e-3.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts:113:30",
@@ -186,7 +186,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:28.855Z",
+                      "startTime": "2026-05-11T08:48:20.876Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -253,12 +253,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1771,
+                      "duration": 1990,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:25.833Z",
+                      "startTime": "2026-05-11T08:48:17.185Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -306,34 +306,34 @@
                       "status": "failed",
                       "duration": 0,
                       "error": {
-                        "message": "Error: page.evaluate: SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at Serializer.parse (http://localhost:3000/source/FudgeCore.js:874:25)\n    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5152:54)\n    at async eval (eval at evaluate (:290:30), <anonymous>:5:7)\n    at async <anonymous>:316:30",
-                        "stack": "Error: page.evaluate: SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at Serializer.parse (http://localhost:3000/source/FudgeCore.js:874:25)\n    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5152:54)\n    at async eval (eval at evaluate (:290:30), <anonymous>:5:7)\n    at async <anonymous>:316:30\n    at Serializer.parse (http://localhost:3000/source/FudgeCore.js:874:25)\n    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5152:54)\n    at async eval (eval at evaluate (:290:30), <anonymous>:5:7)\n    at async <anonymous>:316:30\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_shader_test.spec.ts:9:20",
+                        "message": "Error: page.evaluate: TypeError: Failed to fetch\n    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5150:36)\n    at eval (eval at evaluate (:290:30), <anonymous>:5:23)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+                        "stack": "Error: page.evaluate: TypeError: Failed to fetch\n    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5150:36)\n    at eval (eval at evaluate (:290:30), <anonymous>:5:23)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5150:36)\n    at eval (eval at evaluate (:290:30), <anonymous>:5:23)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_shader_test.spec.ts:9:20",
                         "location": {
                           "file": "http://localhost:3000/source/FudgeCore.js",
-                          "column": 25,
-                          "line": 874
+                          "column": 36,
+                          "line": 5150
                         }
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "http://localhost:3000/source/FudgeCore.js",
-                            "column": 25,
-                            "line": 874
+                            "column": 36,
+                            "line": 5150
                           },
-                          "message": "Error: page.evaluate: SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON\n\u001b[2m    at JSON.parse (<anonymous>)\u001b[22m\n\u001b[2m    at Serializer.parse (http://localhost:3000/source/FudgeCore.js:874:25)\u001b[22m\n\u001b[2m    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5152:54)\u001b[22m\n\u001b[2m    at async eval (eval at evaluate (:290:30), <anonymous>:5:7)\u001b[22m\n\u001b[2m    at async <anonymous>:316:30\u001b[22m\n\u001b[2m    at Serializer.parse (http://localhost:3000/source/FudgeCore.js:874:25)\u001b[22m\n\u001b[2m    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5152:54)\u001b[22m\n\u001b[2m    at async eval (eval at evaluate (:290:30), <anonymous>:5:7)\u001b[22m\n\u001b[2m    at async <anonymous>:316:30\u001b[22m\n\u001b[2m    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_shader_test.spec.ts:9:20\u001b[22m"
+                          "message": "Error: page.evaluate: TypeError: Failed to fetch\n\u001b[2m    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5150:36)\u001b[22m\n\u001b[2m    at eval (eval at evaluate (:290:30), <anonymous>:5:23)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:292:16)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2m    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5150:36)\u001b[22m\n\u001b[2m    at eval (eval at evaluate (:290:30), <anonymous>:5:23)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:292:16)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2m    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_shader_test.spec.ts:9:20\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:25.856Z",
+                      "startTime": "2026-05-11T08:48:17.213Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
                         "file": "http://localhost:3000/source/FudgeCore.js",
-                        "column": 25,
-                        "line": 874
+                        "column": 36,
+                        "line": 5150
                       }
                     }
                   ],
@@ -366,7 +366,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:28.550Z",
+                      "startTime": "2026-05-11T08:48:21.300Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -400,7 +400,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:28.551Z",
+                      "startTime": "2026-05-11T08:48:21.301Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -443,15 +443,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 490,
+                      "duration": 317,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:30.049Z",
+                      "startTime": "2026-05-11T08:48:20.726Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -477,15 +477,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 353,
+                      "duration": 341,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:30.684Z",
+                      "startTime": "2026-05-11T08:48:21.069Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -511,15 +511,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 441,
+                      "duration": 345,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:31.053Z",
+                      "startTime": "2026-05-11T08:48:21.424Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -562,15 +562,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 312,
+                      "duration": 531,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:28.672Z",
+                      "startTime": "2026-05-11T08:48:22.808Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -613,15 +613,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 270,
+                      "duration": 478,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:29.017Z",
+                      "startTime": "2026-05-11T08:48:23.068Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -667,12 +667,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 322,
+                      "duration": 298,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:29.305Z",
+                      "startTime": "2026-05-11T08:48:21.789Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -715,15 +715,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 542,
+                      "duration": 291,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:31.159Z",
+                      "startTime": "2026-05-11T08:48:22.104Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -769,12 +769,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 278,
+                      "duration": 296,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:29.644Z",
+                      "startTime": "2026-05-11T08:48:22.413Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -820,12 +820,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 300,
+                      "duration": 333,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:29.940Z",
+                      "startTime": "2026-05-11T08:48:22.726Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -871,12 +871,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 331,
+                      "duration": 450,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:30.260Z",
+                      "startTime": "2026-05-11T08:48:23.079Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -919,15 +919,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 326,
+                      "duration": 381,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:30.629Z",
+                      "startTime": "2026-05-11T08:48:23.476Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -973,12 +973,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 342,
+                      "duration": 364,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:30.974Z",
+                      "startTime": "2026-05-11T08:48:23.552Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1021,15 +1021,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 496,
+                      "duration": 363,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:31.335Z",
+                      "startTime": "2026-05-11T08:48:23.741Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1075,12 +1075,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 358,
+                      "duration": 383,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:31.524Z",
+                      "startTime": "2026-05-11T08:48:23.882Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1123,15 +1123,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 321,
+                      "duration": 369,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:31.851Z",
+                      "startTime": "2026-05-11T08:48:23.938Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1174,15 +1174,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 319,
+                      "duration": 337,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T11:44:31.854Z",
+                      "startTime": "2026-05-11T08:48:24.127Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1202,8 +1202,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-08T11:44:24.459Z",
-    "duration": 8004.969000000001,
+    "startTime": "2026-05-11T08:48:15.722Z",
+    "duration": 8991.234,
     "expected": 19,
     "skipped": 2,
     "unexpected": 2,

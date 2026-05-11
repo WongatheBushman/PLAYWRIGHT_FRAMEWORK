@@ -10,7 +10,7 @@ test.describe("FUDGE e2e Test - Shaders Test", () => {
             const ƒ = window.testUtils.FudgeCore;
             let graphId: string = "Graph|2023-11-30T11:08:19.277Z|94880";
             // load resources referenced in the link-tag
-            await ƒ.Project.loadResources("PLAYWRIGHT_FRAMEWORK/tests/dependencies/graphs/ShaderTestGraph.json");
+            await ƒ.Project.loadResources("https://github.com/WongatheBushman/PLAYWRIGHT_FRAMEWORK/blob/6405b765721debddcbd98ab194a68a53c0c7e0a0/tests/dependencies/graphs/ShaderTestGraph.json");
             // pick the graph to show
             let graph = ƒ.Project.resources[graphId];
                          
