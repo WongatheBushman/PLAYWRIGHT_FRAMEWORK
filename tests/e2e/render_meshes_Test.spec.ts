@@ -22,7 +22,7 @@ test.describe("FUDGE e2e Test - Render all Meshes", () => {
                 let mesh;
                 switch (subclass[i].name) {
                     case F.MeshOBJ.name:
-                        mesh = await new F.MeshOBJ("Icosphere").load("../dependencies/objects/Icosphere.obj");
+                        mesh = await new F.MeshOBJ("Icosphere").load("https://github.com/WongatheBushman/PLAYWRIGHT_FRAMEWORK/blob/89cee1efb0b4997d99092eaec2bd4e52b40cdd75/tests/dependencies/objects/Icosphere.obj");
                     break;
                     default:
                         mesh = new subclass[i]();
