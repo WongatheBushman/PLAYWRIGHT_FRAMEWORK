@@ -80,7 +80,7 @@
           "specs": [
             {
               "title": "Front View",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -93,53 +93,18 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 389,
-                      "error": {
-                        "message": "Error: A snapshot doesn't exist at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts-snapshots\\meshes-test-e2e-1-win32.png, writing actual.",
-                        "stack": "Error: A snapshot doesn't exist at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts-snapshots\\meshes-test-e2e-1-win32.png, writing actual.\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts:85:9",
-                        "location": {
-                          "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts",
-                          "column": 9,
-                          "line": 85
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 83 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 84 |\u001b[39m         \u001b[36mconst\u001b[39m canvas \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#renderCanvas\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 85 |\u001b[39m         \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"meshes-test-e2e-1.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 86 |\u001b[39m             maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 87 |\u001b[39m         })\u001b[33m;\u001b[39m          \n \u001b[90m 88 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts",
-                            "column": 9,
-                            "line": 85
-                          },
-                          "message": "Error: A snapshot doesn't exist at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts-snapshots\\meshes-test-e2e-1-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 83 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 84 |\u001b[39m         \u001b[36mconst\u001b[39m canvas \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#renderCanvas\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 85 |\u001b[39m         \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"meshes-test-e2e-1.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 86 |\u001b[39m             maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 87 |\u001b[39m         })\u001b[33m;\u001b[39m          \n \u001b[90m 88 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts:85:9\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 185,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:19.780Z",
+                      "startTime": "2026-05-08T11:44:25.828Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "meshes-test-e2e-1-expected.png",
-                          "contentType": "image/png",
-                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts-snapshots\\meshes-test-e2e-1-win32.png"
-                        },
-                        {
-                          "name": "meshes-test-e2e-1-actual.png",
-                          "contentType": "image/png",
-                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\test-results\\e2e-render_meshes_Test-FUD-977be-ender-all-Meshes-Front-View\\meshes-test-e2e-1-actual.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts",
-                        "column": 9,
-                        "line": 85
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "66cd3b87f773833f66dd-7051ac7a6fa2be1d6f7d",
@@ -149,7 +114,7 @@
             },
             {
               "title": "Isometric Top Front",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -160,55 +125,20 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 396,
-                      "error": {
-                        "message": "Error: A snapshot doesn't exist at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts-snapshots\\meshes-test-e2e-2-win32.png, writing actual.",
-                        "stack": "Error: A snapshot doesn't exist at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts-snapshots\\meshes-test-e2e-2-win32.png, writing actual.\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts:99:9",
-                        "location": {
-                          "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts",
-                          "column": 9,
-                          "line": 99
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  97 |\u001b[39m         })\u001b[33m;\u001b[39m  \n \u001b[90m  98 |\u001b[39m         \u001b[36mconst\u001b[39m canvas \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#renderCanvas\"\u001b[39m)\u001b[33m;\u001b[39m   \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  99 |\u001b[39m         \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"meshes-test-e2e-2.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 100 |\u001b[39m             maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 101 |\u001b[39m         })\u001b[33m;\u001b[39m  \n \u001b[90m 102 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts",
-                            "column": 9,
-                            "line": 99
-                          },
-                          "message": "Error: A snapshot doesn't exist at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts-snapshots\\meshes-test-e2e-2-win32.png, writing actual.\n\n\u001b[0m \u001b[90m  97 |\u001b[39m         })\u001b[33m;\u001b[39m  \n \u001b[90m  98 |\u001b[39m         \u001b[36mconst\u001b[39m canvas \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#renderCanvas\"\u001b[39m)\u001b[33m;\u001b[39m   \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  99 |\u001b[39m         \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"meshes-test-e2e-2.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 100 |\u001b[39m             maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 101 |\u001b[39m         })\u001b[33m;\u001b[39m  \n \u001b[90m 102 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts:99:9\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 152,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:24.844Z",
+                      "startTime": "2026-05-08T11:44:28.683Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "meshes-test-e2e-2-expected.png",
-                          "contentType": "image/png",
-                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts-snapshots\\meshes-test-e2e-2-win32.png"
-                        },
-                        {
-                          "name": "meshes-test-e2e-2-actual.png",
-                          "contentType": "image/png",
-                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\test-results\\e2e-render_meshes_Test-FUD-a5923--Meshes-Isometric-Top-Front\\meshes-test-e2e-2-actual.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts",
-                        "column": 9,
-                        "line": 99
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "66cd3b87f773833f66dd-97997cc5c23a2c197170",
@@ -229,34 +159,34 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 363,
+                      "duration": 534,
                       "error": {
-                        "message": "Error: A snapshot doesn't exist at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts-snapshots\\meshes-test-e2e-3-win32.png, writing actual.",
-                        "stack": "Error: A snapshot doesn't exist at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts-snapshots\\meshes-test-e2e-3-win32.png, writing actual.\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts:113:9",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  5074 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: meshes-test-e2e-3.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(meshes-test-e2e-3.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  5074 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: meshes-test-e2e-3.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(meshes-test-e2e-3.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts:113:30",
                         "location": {
                           "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts",
-                          "column": 9,
+                          "column": 30,
                           "line": 113
                         },
-                        "snippet": "\u001b[0m \u001b[90m 111 |\u001b[39m         })\u001b[33m;\u001b[39m    \n \u001b[90m 112 |\u001b[39m         \u001b[36mconst\u001b[39m canvas \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#renderCanvas\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 113 |\u001b[39m         \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"meshes-test-e2e-3.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 114 |\u001b[39m             maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 115 |\u001b[39m         })\u001b[33m;\u001b[39m    \n \u001b[90m 116 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 111 |\u001b[39m         })\u001b[33m;\u001b[39m    \n \u001b[90m 112 |\u001b[39m         \u001b[36mconst\u001b[39m canvas \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#renderCanvas\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 113 |\u001b[39m         \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"meshes-test-e2e-3.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 114 |\u001b[39m             maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 115 |\u001b[39m         })\u001b[33m;\u001b[39m    \n \u001b[90m 116 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts",
-                            "column": 9,
+                            "column": 30,
                             "line": 113
                           },
-                          "message": "Error: A snapshot doesn't exist at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts-snapshots\\meshes-test-e2e-3-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 111 |\u001b[39m         })\u001b[33m;\u001b[39m    \n \u001b[90m 112 |\u001b[39m         \u001b[36mconst\u001b[39m canvas \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#renderCanvas\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 113 |\u001b[39m         \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"meshes-test-e2e-3.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 114 |\u001b[39m             maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 115 |\u001b[39m         })\u001b[33m;\u001b[39m    \n \u001b[90m 116 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts:113:9\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  5074 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: meshes-test-e2e-3.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(meshes-test-e2e-3.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\n\n\u001b[0m \u001b[90m 111 |\u001b[39m         })\u001b[33m;\u001b[39m    \n \u001b[90m 112 |\u001b[39m         \u001b[36mconst\u001b[39m canvas \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#renderCanvas\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 113 |\u001b[39m         \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"meshes-test-e2e-3.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 114 |\u001b[39m             maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 115 |\u001b[39m         })\u001b[33m;\u001b[39m    \n \u001b[90m 116 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts:113:30\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:28.029Z",
+                      "startTime": "2026-05-08T11:44:28.855Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -268,11 +198,16 @@
                           "name": "meshes-test-e2e-3-actual.png",
                           "contentType": "image/png",
                           "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\test-results\\e2e-render_meshes_Test-FUD-61e24-Meshes-Isometric-Back-Below\\meshes-test-e2e-3-actual.png"
+                        },
+                        {
+                          "name": "meshes-test-e2e-3-diff.png",
+                          "contentType": "image/png",
+                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\test-results\\e2e-render_meshes_Test-FUD-61e24-Meshes-Isometric-Back-Below\\meshes-test-e2e-3-diff.png"
                         }
                       ],
                       "errorLocation": {
                         "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts",
-                        "column": 9,
+                        "column": 30,
                         "line": 113
                       }
                     }
@@ -304,7 +239,7 @@
           "specs": [
             {
               "title": "renders all core meshes with ShaderLitTextured",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -317,59 +252,166 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 2023,
-                      "error": {
-                        "message": "Error: A snapshot doesn't exist at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts-snapshots\\mesh-e2e-win32.png, writing actual.",
-                        "stack": "Error: A snapshot doesn't exist at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts-snapshots\\mesh-e2e-win32.png, writing actual.\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts:84:5",
-                        "location": {
-                          "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts",
-                          "column": 5,
-                          "line": 84
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 82 |\u001b[39m     \u001b[90m//check rendered canvas against reference-screenshot with an allowed\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[90m//Pixel-difference of 0.01 (1%)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 84 |\u001b[39m     \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"mesh-e2e.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 85 |\u001b[39m       maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 86 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 87 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts",
-                            "column": 5,
-                            "line": 84
-                          },
-                          "message": "Error: A snapshot doesn't exist at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts-snapshots\\mesh-e2e-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 82 |\u001b[39m     \u001b[90m//check rendered canvas against reference-screenshot with an allowed\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[90m//Pixel-difference of 0.01 (1%)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 84 |\u001b[39m     \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"mesh-e2e.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 85 |\u001b[39m       maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 86 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 87 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts:84:5\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 1771,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:19.811Z",
+                      "startTime": "2026-05-08T11:44:25.833Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "mesh-e2e-expected.png",
-                          "contentType": "image/png",
-                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts-snapshots\\mesh-e2e-win32.png"
-                        },
-                        {
-                          "name": "mesh-e2e-actual.png",
-                          "contentType": "image/png",
-                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\test-results\\e2e-render_objects_top-FUD-105ec-shes-with-ShaderLitTextured\\mesh-e2e-actual.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_objects_top.spec.ts",
-                        "column": 5,
-                        "line": 84
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "c802bc7e1b57f4e8c90b-aa7bf885ac5d399a8fff",
               "file": "e2e/render_objects_top.spec.ts",
               "line": 16,
               "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e\\render_shader_test.spec.ts",
+      "file": "e2e/render_shader_test.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FUDGE e2e Test - Shaders Test",
+          "file": "e2e/render_shader_test.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Front View",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 0,
+                      "error": {
+                        "message": "Error: page.evaluate: SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at Serializer.parse (http://localhost:3000/source/FudgeCore.js:874:25)\n    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5152:54)\n    at async eval (eval at evaluate (:290:30), <anonymous>:5:7)\n    at async <anonymous>:316:30",
+                        "stack": "Error: page.evaluate: SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at Serializer.parse (http://localhost:3000/source/FudgeCore.js:874:25)\n    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5152:54)\n    at async eval (eval at evaluate (:290:30), <anonymous>:5:7)\n    at async <anonymous>:316:30\n    at Serializer.parse (http://localhost:3000/source/FudgeCore.js:874:25)\n    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5152:54)\n    at async eval (eval at evaluate (:290:30), <anonymous>:5:7)\n    at async <anonymous>:316:30\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_shader_test.spec.ts:9:20",
+                        "location": {
+                          "file": "http://localhost:3000/source/FudgeCore.js",
+                          "column": 25,
+                          "line": 874
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "http://localhost:3000/source/FudgeCore.js",
+                            "column": 25,
+                            "line": 874
+                          },
+                          "message": "Error: page.evaluate: SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON\n\u001b[2m    at JSON.parse (<anonymous>)\u001b[22m\n\u001b[2m    at Serializer.parse (http://localhost:3000/source/FudgeCore.js:874:25)\u001b[22m\n\u001b[2m    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5152:54)\u001b[22m\n\u001b[2m    at async eval (eval at evaluate (:290:30), <anonymous>:5:7)\u001b[22m\n\u001b[2m    at async <anonymous>:316:30\u001b[22m\n\u001b[2m    at Serializer.parse (http://localhost:3000/source/FudgeCore.js:874:25)\u001b[22m\n\u001b[2m    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5152:54)\u001b[22m\n\u001b[2m    at async eval (eval at evaluate (:290:30), <anonymous>:5:7)\u001b[22m\n\u001b[2m    at async <anonymous>:316:30\u001b[22m\n\u001b[2m    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_shader_test.spec.ts:9:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T11:44:25.856Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "http://localhost:3000/source/FudgeCore.js",
+                        "column": 25,
+                        "line": 874
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "34083a972c9a2ea405c7-2fd20eb62c8c8f7caf5b",
+              "file": "e2e/render_shader_test.spec.ts",
+              "line": 47,
+              "column": 9
+            },
+            {
+              "title": "Isometric Top Front",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T11:44:28.550Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "34083a972c9a2ea405c7-74abade6343bd2b00982",
+              "file": "e2e/render_shader_test.spec.ts",
+              "line": 61,
+              "column": 9
+            },
+            {
+              "title": "Isometric Back Below",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T11:44:28.551Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "34083a972c9a2ea405c7-7f11a946bed9941af80b",
+              "file": "e2e/render_shader_test.spec.ts",
+              "line": 75,
+              "column": 9
             }
           ]
         }
@@ -401,15 +443,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1593,
+                      "duration": 490,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:19.759Z",
+                      "startTime": "2026-05-08T11:44:30.049Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -435,15 +477,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 358,
+                      "duration": 353,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:22.431Z",
+                      "startTime": "2026-05-08T11:44:30.684Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -469,15 +511,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 398,
+                      "duration": 441,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:22.810Z",
+                      "startTime": "2026-05-08T11:44:31.053Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -520,15 +562,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 650,
+                      "duration": 312,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:24.708Z",
+                      "startTime": "2026-05-08T11:44:28.672Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -571,15 +613,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 370,
+                      "duration": 270,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:23.228Z",
+                      "startTime": "2026-05-08T11:44:29.017Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -622,15 +664,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 323,
+                      "duration": 322,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:23.620Z",
+                      "startTime": "2026-05-08T11:44:29.305Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -673,15 +715,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 293,
+                      "duration": 542,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:23.963Z",
+                      "startTime": "2026-05-08T11:44:31.159Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -724,15 +766,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 336,
+                      "duration": 278,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:24.276Z",
+                      "startTime": "2026-05-08T11:44:29.644Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -775,15 +817,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 499,
+                      "duration": 300,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:24.653Z",
+                      "startTime": "2026-05-08T11:44:29.940Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -826,15 +868,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 739,
+                      "duration": 331,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:25.179Z",
+                      "startTime": "2026-05-08T11:44:30.260Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -877,15 +919,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 439,
+                      "duration": 326,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:25.605Z",
+                      "startTime": "2026-05-08T11:44:30.629Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -928,15 +970,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 421,
+                      "duration": 342,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:25.945Z",
+                      "startTime": "2026-05-08T11:44:30.974Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -979,15 +1021,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 413,
+                      "duration": 496,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:26.067Z",
+                      "startTime": "2026-05-08T11:44:31.335Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1030,15 +1072,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 416,
+                      "duration": 358,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:26.405Z",
+                      "startTime": "2026-05-08T11:44:31.524Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1081,15 +1123,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 1,
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 431,
+                      "duration": 321,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:26.512Z",
+                      "startTime": "2026-05-08T11:44:31.851Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1132,15 +1174,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 361,
+                      "duration": 319,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-06T06:59:26.843Z",
+                      "startTime": "2026-05-08T11:44:31.854Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1160,11 +1202,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-06T06:59:18.223Z",
-    "duration": 11043.977,
-    "expected": 16,
-    "skipped": 0,
-    "unexpected": 4,
+    "startTime": "2026-05-08T11:44:24.459Z",
+    "duration": 8004.969000000001,
+    "expected": 19,
+    "skipped": 2,
+    "unexpected": 2,
     "flaky": 0
   }
 }
