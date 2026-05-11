@@ -10,10 +10,10 @@ test.describe("FUDGE e2e Test - Shaders Test", () => {
             const ƒ = window.testUtils.FudgeCore;
             let graphId: string = "Graph|2023-11-30T11:08:19.277Z|94880";
             // load resources referenced in the link-tag
-            await ƒ.Project.loadResources("https://github.com/WongatheBushman/PLAYWRIGHT_FRAMEWORK/blob/6405b765721debddcbd98ab194a68a53c0c7e0a0/tests/dependencies/graphs/ShaderTestGraph.json");
+            await ƒ.Project.loadResources("https://raw.githubusercontent.com/WongatheBushman/PLAYWRIGHT_FRAMEWORK/ed7d5a5c1aa1ea9c8d5b0e2452a03313c93185f9/tests/dependencies/graphs/ShaderTestGraph.json");
             // pick the graph to show
             let graph = ƒ.Project.resources[graphId];
-                         
+                      
 
             const cameraNode = new ƒ.Node("Camera");
             const cmpCamTrans = new ƒ.ComponentTransform();
@@ -26,10 +26,10 @@ test.describe("FUDGE e2e Test - Shaders Test", () => {
             graph.appendChild(cameraNode);
             //get canves from html-page and set height and width
             const canvas = document.getElementById("renderCanvas");
-            canvas.width = 800;
-            canvas.height = 600;
-            canvas.style.width = "800px";
-            canvas.style.height = "600px";
+            canvas.width = 1920;
+            canvas.height = 1080;
+            canvas.style.width = "1920px";
+            canvas.style.height = "1080px";
             //create new viewport and initialize it
             const viewport = new ƒ.Viewport();
             viewport.initialize("ShaderTestViewport", graph, cmpCamera, canvas);
@@ -44,14 +44,22 @@ test.describe("FUDGE e2e Test - Shaders Test", () => {
         await page.close();
     });
 
+   /*test.afterEach(async () => {
+        await page.evaluate(async () => {
+            const {cmpCamTrans, ƒ} = window.TestData;
+            cmpCamTrans.mtxLocal.set(ƒ.Matrix4x4.IDENTITY());
+        });
+    });*/
+
     test("Front View", async () => {
         //await page.goto("/"); 
         //await page.waitForFunction(() => window.testUtils);
         await page.evaluate(() => {
             const {cmpCamTrans, viewport, ƒ} = window.TestData;
-            cmpCamTrans.mtxLocal.translation = new ƒ.Vector3(0, 0, 40);
-            cmpCamTrans.mtxLocal.lookAt(ƒ.Vector3.ZERO());
-            viewport.draw();      
+            cmpCamTrans.mtxLocal.translation = new ƒ.Vector3(0, 0, 20);
+            cmpCamTrans.mtxLocal.lookAt(ƒ.Vector3.ZERO(), new ƒ.Vector3(0, 1, 0));
+            viewport.draw();
+   
         });
         const canvas = page.locator("#renderCanvas");
         await expect(canvas).toHaveScreenshot("shader-test-e2e-1.png", {
@@ -63,9 +71,10 @@ test.describe("FUDGE e2e Test - Shaders Test", () => {
         //await page.waitForFunction(() => window.testUtils);
         await page.evaluate(() => {
             const {cmpCamTrans, viewport, ƒ} = window.TestData;
-            cmpCamTrans.mtxLocal.translation = new ƒ.Vector3(20, 20, 20);
-            cmpCamTrans.mtxLocal.lookAt(ƒ.Vector3.ZERO());   
-            viewport.draw();        
+            cmpCamTrans.mtxLocal.translation = new ƒ.Vector3(10, 10, 10);
+            cmpCamTrans.mtxLocal.lookAt(ƒ.Vector3.ZERO(), new ƒ.Vector3(0, 1, 0));   
+            viewport.draw(); 
+       
         });  
         const canvas = page.locator("#renderCanvas");   
         await expect(canvas).toHaveScreenshot("shader-test-e2e-2.png", {
@@ -77,9 +86,10 @@ test.describe("FUDGE e2e Test - Shaders Test", () => {
         //await page.waitForFunction(() => window.testUtils);
         await page.evaluate(() => {
             const {cmpCamTrans, viewport, ƒ} = window.TestData;
-            cmpCamTrans.mtxLocal.translation = new ƒ.Vector3(20, -20, -20); 
-            cmpCamTrans.mtxLocal.lookAt(ƒ.Vector3.ZERO());
+            cmpCamTrans.mtxLocal.translation = new ƒ.Vector3(10, 10, -10); 
+            cmpCamTrans.mtxLocal.lookAt(ƒ.Vector3.ZERO(), new ƒ.Vector3(0, 1, 0));
             viewport.draw();
+ 
         });    
         const canvas = page.locator("#renderCanvas");
         await expect(canvas).toHaveScreenshot("shader-test-e2e-3.png", {

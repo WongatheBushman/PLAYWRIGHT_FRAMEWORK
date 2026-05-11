@@ -27,7 +27,7 @@ export default defineConfig({
     //run all tests in a headless Browser
     headless: true,
     //defines the size of the viewport
-    viewport: { width: 900, height: 700 },
+    viewport: { width: 2000, height: 1150 },
     launchOptions: {
       args: ['--use-gl=angle']
     }

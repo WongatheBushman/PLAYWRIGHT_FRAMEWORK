@@ -22,7 +22,7 @@ test.describe("FUDGE e2e Test - Render all Meshes", () => {
                 let mesh;
                 switch (subclass[i].name) {
                     case F.MeshOBJ.name:
-                        mesh = await new F.MeshOBJ("Icosphere").load("https://github.com/WongatheBushman/PLAYWRIGHT_FRAMEWORK/blob/89cee1efb0b4997d99092eaec2bd4e52b40cdd75/tests/dependencies/objects/Icosphere.obj");
+                        mesh = await new F.MeshOBJ("Icosphere").load("https://raw.githubusercontent.com/WongatheBushman/PLAYWRIGHT_FRAMEWORK/refs/heads/main/tests/dependencies/objects/Icosphere.obj");
                     break;
                     default:
                         mesh = new subclass[i]();
@@ -54,10 +54,10 @@ test.describe("FUDGE e2e Test - Render all Meshes", () => {
             scene.appendChild(cameraNode);
             //get canves from html-page and set height and width
             const canvas = document.getElementById("renderCanvas");
-            canvas.width = 800;
-            canvas.height = 600;
-            canvas.style.width = "800px";
-            canvas.style.height = "600px";
+            canvas.width = 1920;
+            canvas.height = 1080;
+            canvas.style.width = "1920px";
+            canvas.style.height = "1080px";
             //create new viewport and initialize it
             const viewport = new F.Viewport();
             viewport.initialize("MeshTestViewport", scene, cmpCamera, canvas);
@@ -78,7 +78,7 @@ test.describe("FUDGE e2e Test - Render all Meshes", () => {
         await page.evaluate(() => {
             const {cmpCamTrans, viewport, F} = window.TestData;
             cmpCamTrans.mtxLocal.translation = new F.Vector3(0, 0, 40);
-            cmpCamTrans.mtxLocal.lookAt(F.Vector3.ZERO());
+            cmpCamTrans.mtxLocal.lookAt(F.Vector3.ZERO(), new F.Vector3(0, 1, 0));
             viewport.draw();      
         });
         const canvas = page.locator("#renderCanvas");
@@ -92,7 +92,7 @@ test.describe("FUDGE e2e Test - Render all Meshes", () => {
         await page.evaluate(() => {
             const {cmpCamTrans, viewport, F} = window.TestData;
             cmpCamTrans.mtxLocal.translation = new F.Vector3(20, 20, 20);
-            cmpCamTrans.mtxLocal.lookAt(F.Vector3.ZERO());   
+            cmpCamTrans.mtxLocal.lookAt(F.Vector3.ZERO(), new F.Vector3(0, 1, 0));   
             viewport.draw();        
         });  
         const canvas = page.locator("#renderCanvas");   
@@ -105,8 +105,8 @@ test.describe("FUDGE e2e Test - Render all Meshes", () => {
         //await page.waitForFunction(() => window.testUtils);
         await page.evaluate(() => {
             const {cmpCamTrans, viewport, F} = window.TestData;
-            cmpCamTrans.mtxLocal.translation = new F.Vector3(20, -20, -20); 
-            cmpCamTrans.mtxLocal.lookAt(F.Vector3.ZERO());
+            cmpCamTrans.mtxLocal.translation = new F.Vector3(20, 20, -20); 
+            cmpCamTrans.mtxLocal.lookAt(F.Vector3.ZERO(), new F.Vector3(0, 1, 0));
             viewport.draw();
         });    
         const canvas = page.locator("#renderCanvas");

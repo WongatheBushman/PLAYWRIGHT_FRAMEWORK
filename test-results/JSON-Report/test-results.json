@@ -94,12 +94,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 185,
+                      "duration": 397,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:17.178Z",
+                      "startTime": "2026-05-11T09:37:09.334Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -128,12 +128,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 172,
+                      "duration": 320,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:20.690Z",
+                      "startTime": "2026-05-11T09:37:11.888Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -148,7 +148,7 @@
             },
             {
               "title": "Isometric Back Below",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -161,58 +161,18 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 545,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  5074 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: meshes-test-e2e-3.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(meshes-test-e2e-3.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  5074 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: meshes-test-e2e-3.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(meshes-test-e2e-3.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts:113:30",
-                        "location": {
-                          "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts",
-                          "column": 30,
-                          "line": 113
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 111 |\u001b[39m         })\u001b[33m;\u001b[39m    \n \u001b[90m 112 |\u001b[39m         \u001b[36mconst\u001b[39m canvas \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#renderCanvas\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 113 |\u001b[39m         \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"meshes-test-e2e-3.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 114 |\u001b[39m             maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 115 |\u001b[39m         })\u001b[33m;\u001b[39m    \n \u001b[90m 116 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts",
-                            "column": 30,
-                            "line": 113
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#renderCanvas')\n  5074 pixels (ratio 0.02 of all image pixels) are different.\n\n  Snapshot: meshes-test-e2e-3.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(meshes-test-e2e-3.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - waiting for locator('#renderCanvas')\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"800\" height=\"600\" tabindex=\"0\" id=\"renderCanvas\"></canvas>\u001b[22m\n\u001b[2m  - taking element screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    - waiting for element to be stable\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 5074 pixels (ratio 0.02 of all image pixels) are different.\u001b[22m\n\n\n\u001b[0m \u001b[90m 111 |\u001b[39m         })\u001b[33m;\u001b[39m    \n \u001b[90m 112 |\u001b[39m         \u001b[36mconst\u001b[39m canvas \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#renderCanvas\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 113 |\u001b[39m         \u001b[36mawait\u001b[39m expect(canvas)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"meshes-test-e2e-3.png\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 114 |\u001b[39m             maxDiffPixelRatio\u001b[33m:\u001b[39m \u001b[35m0.01\u001b[39m\n \u001b[90m 115 |\u001b[39m         })\u001b[33m;\u001b[39m    \n \u001b[90m 116 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts:113:30\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 305,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:20.876Z",
+                      "startTime": "2026-05-11T09:37:12.223Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "meshes-test-e2e-3-expected.png",
-                          "contentType": "image/png",
-                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts-snapshots\\meshes-test-e2e-3-win32.png"
-                        },
-                        {
-                          "name": "meshes-test-e2e-3-actual.png",
-                          "contentType": "image/png",
-                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\test-results\\e2e-render_meshes_Test-FUD-61e24-Meshes-Isometric-Back-Below\\meshes-test-e2e-3-actual.png"
-                        },
-                        {
-                          "name": "meshes-test-e2e-3-diff.png",
-                          "contentType": "image/png",
-                          "path": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\test-results\\e2e-render_meshes_Test-FUD-61e24-Meshes-Isometric-Back-Below\\meshes-test-e2e-3-diff.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_meshes_Test.spec.ts",
-                        "column": 30,
-                        "line": 113
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "66cd3b87f773833f66dd-876e5248ddb2eb9eef8b",
@@ -253,12 +213,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1990,
+                      "duration": 1884,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:17.185Z",
+                      "startTime": "2026-05-11T09:37:09.339Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -290,7 +250,7 @@
           "specs": [
             {
               "title": "Front View",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -303,46 +263,23 @@
                     {
                       "workerIndex": 2,
                       "parallelIndex": 2,
-                      "status": "failed",
-                      "duration": 0,
-                      "error": {
-                        "message": "Error: page.evaluate: TypeError: Failed to fetch\n    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5150:36)\n    at eval (eval at evaluate (:290:30), <anonymous>:5:23)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
-                        "stack": "Error: page.evaluate: TypeError: Failed to fetch\n    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5150:36)\n    at eval (eval at evaluate (:290:30), <anonymous>:5:23)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5150:36)\n    at eval (eval at evaluate (:290:30), <anonymous>:5:23)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_shader_test.spec.ts:9:20",
-                        "location": {
-                          "file": "http://localhost:3000/source/FudgeCore.js",
-                          "column": 36,
-                          "line": 5150
-                        }
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "http://localhost:3000/source/FudgeCore.js",
-                            "column": 36,
-                            "line": 5150
-                          },
-                          "message": "Error: page.evaluate: TypeError: Failed to fetch\n\u001b[2m    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5150:36)\u001b[22m\n\u001b[2m    at eval (eval at evaluate (:290:30), <anonymous>:5:23)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:292:16)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2m    at Project.loadResources (http://localhost:3000/source/FudgeCore.js:5150:36)\u001b[22m\n\u001b[2m    at eval (eval at evaluate (:290:30), <anonymous>:5:23)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:292:16)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2m    at D:\\THESIS\\PLAYWRIGHT_FRAMEWORK\\tests\\e2e\\render_shader_test.spec.ts:9:20\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 344,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:17.213Z",
+                      "startTime": "2026-05-11T09:37:09.368Z",
                       "annotations": [],
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "http://localhost:3000/source/FudgeCore.js",
-                        "column": 36,
-                        "line": 5150
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "34083a972c9a2ea405c7-2fd20eb62c8c8f7caf5b",
               "file": "e2e/render_shader_test.spec.ts",
-              "line": 47,
+              "line": 54,
               "column": 9
             },
             {
@@ -358,25 +295,25 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 278,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:21.300Z",
+                      "startTime": "2026-05-11T09:37:16.448Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
               "id": "34083a972c9a2ea405c7-74abade6343bd2b00982",
               "file": "e2e/render_shader_test.spec.ts",
-              "line": 61,
+              "line": 69,
               "column": 9
             },
             {
@@ -392,25 +329,25 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 291,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:21.301Z",
+                      "startTime": "2026-05-11T09:37:16.742Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
               "id": "34083a972c9a2ea405c7-7f11a946bed9941af80b",
               "file": "e2e/render_shader_test.spec.ts",
-              "line": 75,
+              "line": 84,
               "column": 9
             }
           ]
@@ -446,12 +383,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 317,
+                      "duration": 340,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:20.726Z",
+                      "startTime": "2026-05-11T09:37:11.898Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -480,12 +417,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 341,
+                      "duration": 382,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:21.069Z",
+                      "startTime": "2026-05-11T09:37:12.258Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -514,12 +451,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 345,
+                      "duration": 399,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:21.424Z",
+                      "startTime": "2026-05-11T09:37:12.657Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -562,15 +499,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 531,
+                      "duration": 337,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:22.808Z",
+                      "startTime": "2026-05-11T09:37:12.583Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -613,15 +550,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 478,
+                      "duration": 420,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:23.068Z",
+                      "startTime": "2026-05-11T09:37:12.942Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -667,12 +604,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 298,
+                      "duration": 449,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:21.789Z",
+                      "startTime": "2026-05-11T09:37:13.082Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -715,15 +652,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 291,
+                      "duration": 352,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:22.104Z",
+                      "startTime": "2026-05-11T09:37:13.384Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -769,12 +706,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 296,
+                      "duration": 362,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:22.413Z",
+                      "startTime": "2026-05-11T09:37:13.550Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -817,15 +754,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 333,
+                      "duration": 325,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:22.726Z",
+                      "startTime": "2026-05-11T09:37:13.756Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -871,12 +808,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 450,
+                      "duration": 335,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:23.079Z",
+                      "startTime": "2026-05-11T09:37:13.931Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -919,15 +856,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 381,
+                      "duration": 392,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:23.476Z",
+                      "startTime": "2026-05-11T09:37:14.102Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -973,12 +910,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 364,
+                      "duration": 386,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:23.552Z",
+                      "startTime": "2026-05-11T09:37:14.285Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1021,15 +958,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 363,
+                      "duration": 423,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:23.741Z",
+                      "startTime": "2026-05-11T09:37:14.519Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1072,15 +1009,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 383,
+                      "duration": 343,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:23.882Z",
+                      "startTime": "2026-05-11T09:37:14.703Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1123,15 +1060,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 369,
+                      "duration": 337,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:23.938Z",
+                      "startTime": "2026-05-11T09:37:14.963Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1174,15 +1111,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 337,
+                      "duration": 322,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-11T08:48:24.127Z",
+                      "startTime": "2026-05-11T09:37:15.069Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1202,11 +1139,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-11T08:48:15.722Z",
-    "duration": 8991.234,
-    "expected": 19,
-    "skipped": 2,
-    "unexpected": 2,
+    "startTime": "2026-05-11T09:37:07.927Z",
+    "duration": 9370.169,
+    "expected": 23,
+    "skipped": 0,
+    "unexpected": 0,
     "flaky": 0
   }
 }

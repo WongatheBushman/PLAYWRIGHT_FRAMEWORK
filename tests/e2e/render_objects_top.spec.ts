@@ -67,10 +67,10 @@ test.describe("FUDGE Mesh Rendering E2E", () => {
       scene.appendChild(cameraNode);
       //get canves from html-page and set height and width
       const canvas = document.getElementById("renderCanvas");
-      canvas.width = 800;
-      canvas.height = 600;
-      canvas.style.width = "800px";
-      canvas.style.height = "600px";
+      canvas.width = 1920;
+      canvas.height = 1080;
+      canvas.style.width = "1920px";
+      canvas.style.height = "1080px";
       //create new viewport and initialize it
       const viewport = new F.Viewport();
       viewport.initialize("MeshTestViewport", scene, cmpCamera, canvas);
